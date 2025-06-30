@@ -1,3 +1,5 @@
+@import url('https://s4vitar.github.io/assets/css/main.css');
+
 body {
   font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -47,11 +49,6 @@ nav a:hover {
   border-radius: 50%;
 }
 
-.sidebar .social a {
-  color: #38bdf8;
-  display: block;
-  margin-bottom: 8px;
-}
 
 .content {
   flex: 1;
@@ -86,4 +83,18 @@ a:hover {
 ul {
   padding-left: 20px;
   line-height: 1.6;
+}
+
+.author__urls.social-icons {
+  list-style: none;
+  padding-left: 0;
+}
+
+.author__urls.social-icons li {
+  margin-bottom: 8px;
+}
+
+.author__urls.social-icons a {
+  color: #38bdf8;
+  text-decoration: none;
 }

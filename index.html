@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://s4vitar.github.io/assets/css/main.css">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
@@ -22,12 +23,28 @@
 
   <div class="container">
     <aside class="sidebar">
-      <img src="https://via.placeholder.com/150" alt="Avatar">
-      <p>Estudiante de Ingeniería Informática en la Universidade da Coruña (UDC).</p>
-      <p>Apasionado por la ciberseguridad, los sistemas complejos y el desarrollo de software.</p>
-      <div class="social">
-        <a href="mailto:danibarbeytotorres@gmail.com">danibarbeytotorres@gmail.com</a>
-        <a href="https://github.com/danielbarbeytotorres" target="_blank">GitHub</a>
+      <div itemscope itemtype="https://schema.org/Person">
+        <div class="author__avatar">
+          <img src="https://via.placeholder.com/150" alt="Daniel Barbeyto Torres" itemprop="image">
+        </div>
+        <div class="author__content">
+          <h3 class="author__name" itemprop="name">Daniel Barbeyto Torres</h3>
+          <p class="author__bio" itemprop="description">Estudiante de Ingeniería Informática en la Universidade da Coruña (UDC). Apasionado por la ciberseguridad, los sistemas complejos y el desarrollo de software.</p>
+        </div>
+        <div class="author__urls-wrapper">
+          <ul class="author__urls social-icons">
+            <li>
+              <a href="mailto:danibarbeytotorres@gmail.com" itemprop="sameAs">
+                <i class="fas fa-envelope" aria-hidden="true"></i> Email
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/danielbarbeytotorres" itemprop="sameAs" rel="nofollow noopener noreferrer">
+                <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </aside>
 
@@ -57,7 +74,8 @@
         <li><a href="ruta/a/blog1.html" target="_blank">Cómo no volverse loco con las claves PGP</a></li>
       </ul>
     </main>
-  </div>
+</div>
 
+  <script data-search-pseudo-elements defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
 </body>
 </html>
