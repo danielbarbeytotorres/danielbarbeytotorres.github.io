@@ -1,81 +1,86 @@
 body {
-  --primary: #02457a;
-  --secondary: #036;
   font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  max-width: 900px;
-  margin: 40px auto;
+  margin: 0;
+  padding: 0;
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+header {
+  background-color: #1e293b;
   padding: 20px;
-  background: linear-gradient(135deg, #f0f7ff, #ffffff);
-  color: #333;
-  opacity: 0;
-  animation: fadeIn 0.6s forwards;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-h1 {
-  color: var(--primary);
-  margin-bottom: 0.5em;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-h2 {
-  color: var(--secondary);
-  margin-top: 2em;
-}
-
-a {
-  color: var(--primary);
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-a:hover {
-  color: #049;
-  text-decoration: underline;
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
 }
 
 nav {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 nav a {
-  color: var(--primary);
-  font-weight: bold;
-  padding: 6px 12px;
-  border-radius: 4px;
-  transition: background-color 0.3s, transform 0.2s;
+  color: #38bdf8;
+  margin-right: 15px;
+  text-decoration: none;
 }
 
 nav a:hover {
-  background-color: #e5e5e5;
-  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.sidebar {
+  width: 250px;
+  margin-right: 40px;
+}
+
+.sidebar img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.sidebar .social a {
+  color: #38bdf8;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.content {
+  flex: 1;
+}
+
+h2 {
+  border-bottom: 1px solid #334155;
+  padding-bottom: 4px;
+}
+
+a {
+  color: #38bdf8;
+}
+
+a:hover {
+  color: #7dd3fc;
 }
 
 .back-button {
-  margin-top: 20px;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  padding: 8px 12px;
+  background-color: #334155;
+  color: #f8fafc;
+  border: none;
+  padding: 6px 12px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 20px;
 }
 
 .back-button:hover {
-  background-color: #e0e0e0;
-  transform: scale(1.05);
+  background-color: #475569;
 }
 
 ul {

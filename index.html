@@ -11,52 +11,53 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="apuntes.html">Apuntes</a>
-    <a href="tests.html">Tests</a>
-  </nav>
-  <h1>Daniel Barbeyto Torres</h1>
-  <p>Estudiante de Ingeniería Informática en la Universidade da Coruña (UDC).</p>
-  <p>Apasionado por la ciberseguridad, los sistemas complejos y el desarrollo de software.</p>
+  <header>
+    <h1>Daniel Barbeyto Torres</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="apuntes.html">Apuntes</a>
+      <a href="tests.html">Tests</a>
+    </nav>
+  </header>
 
-  <h2>📩 Contacto</h2>
-  <ul>
-    <li><strong>Email:</strong> danibarbeytotorres@gmail.com</li>
-    <!-- <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tuusuario" target="_blank">linkedin.com/in/tuusuario</a></li> -->
-    <li><strong>GitHub:</strong> <a href="https://github.com/danielbarbeytotorres" target="_blank">github.com/danielbarbeyto</a></li>
-  </ul>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="https://via.placeholder.com/150" alt="Avatar">
+      <p>Estudiante de Ingeniería Informática en la Universidade da Coruña (UDC).</p>
+      <p>Apasionado por la ciberseguridad, los sistemas complejos y el desarrollo de software.</p>
+      <div class="social">
+        <a href="mailto:danibarbeytotorres@gmail.com">danibarbeytotorres@gmail.com</a>
+        <a href="https://github.com/danielbarbeytotorres" target="_blank">GitHub</a>
+      </div>
+    </aside>
 
-  <h2>📄 CV</h2>
-  <ul>
-    <!-- Sustituye el enlace por el PDF de tu CV (puede estar en tu repo o en Drive) -->
-    <li><a href="ruta/a/tu_cv.pdf" target="_blank">Descargar mi currículum (PDF)</a></li>
-  </ul>
+    <main class="content">
+      <h2>📄 CV</h2>
+      <ul>
+        <li><a href="ruta/a/tu_cv.pdf" target="_blank">Descargar mi currículum (PDF)</a></li>
+      </ul>
 
-  <h2>🛠️ Proyectos</h2>
-  <ul>
-    <li><a href="https://github.com/danielbarbeyto/backup-script" target="_blank">Script POSIX de backup</a></li>
-    <!-- Añade más proyectos aquí -->
-    <!-- Ejemplo:
-    <li><a href="https://github.com/danielbarbeyto/herramienta-seguridad" target="_blank">Herramienta de análisis forense en bash</a></li>
-    -->
-  </ul>
-  <h2>📚 Apuntes útiles</h2>
-  <ul>
-    <li><a href="apuntes.html">Ver apuntes por curso y asignatura</a></li>
-  </ul>
+      <h2>🛠️ Proyectos</h2>
+      <ul>
+        <li><a href="https://github.com/danielbarbeyto/backup-script" target="_blank">Script POSIX de backup</a></li>
+      </ul>
 
-  <h2>🧪 Tests tipo examen</h2>
-  <ul>
-    <li><a href="tests.html">Ver tests por curso y asignatura</a></li>
-  </ul>
+      <h2>📚 Apuntes útiles</h2>
+      <ul>
+        <li><a href="apuntes.html">Ver apuntes por curso y asignatura</a></li>
+      </ul>
 
-  <h2>🧠 Reflexiones técnicas</h2>
-  <ul>
-    <!-- Si algún día te animas a escribir cosas en plan blog -->
-    <li><a href="ruta/a/blog1.html" target="_blank">Cómo no volverse loco con las claves PGP</a></li>
-    <!-- Puedes dejarlo vacío de momento si no has escrito nada -->
-  </ul>
+      <h2>🧪 Tests tipo examen</h2>
+      <ul>
+        <li><a href="tests.html">Ver tests por curso y asignatura</a></li>
+      </ul>
+
+      <h2>🧠 Reflexiones técnicas</h2>
+      <ul>
+        <li><a href="ruta/a/blog1.html" target="_blank">Cómo no volverse loco con las claves PGP</a></li>
+      </ul>
+    </main>
+  </div>
 
 </body>
 </html>
