@@ -1,12 +1,27 @@
+:root {
+  --primary: #02457a;
+  --secondary: #036;
+  --accent: #007bff;
+  --background: linear-gradient(120deg, #f7f9fc 0%, #e8f3ff 100%);
+  --nav-hover: rgba(0, 0, 0, 0.05);
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #f7f9fc;
+  margin: 0;
+  background: var(--background);
   color: #333;
   opacity: 0;
   animation: fadeIn 0.5s forwards;
+}
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 @keyframes fadeIn {
@@ -14,49 +29,63 @@ body {
 }
 
 h1 {
-  color: #02457a;
+  color: var(--primary);
   margin-bottom: 0.5em;
 }
 
 h2 {
-  color: #036;
+  color: var(--secondary);
   margin-top: 2em;
 }
 
 a {
-  color: #025;
+  color: var(--primary);
   text-decoration: none;
   transition: color 0.3s;
 }
 
 a:hover {
-  color: #049;
+  color: var(--accent);
 }
 
 nav {
+  position: sticky;
+  top: 0;
   display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.6s ease-out;
+  z-index: 100;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
 nav a {
-  color: #02457a;
+  color: var(--primary);
   font-weight: bold;
   padding: 6px 12px;
   border-radius: 4px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover {
-  background-color: #e5e5e5;
+  background-color: var(--nav-hover);
+  color: var(--accent);
 }
 
 .back-button {
   margin-top: 20px;
-  background-color: #f0f0f0;
+  background-color: #f8f8f8;
   border: 1px solid #ccc;
   padding: 8px 12px;
   cursor: pointer;
+  border-radius: 4px;
   transition: background-color 0.3s;
 }
 
