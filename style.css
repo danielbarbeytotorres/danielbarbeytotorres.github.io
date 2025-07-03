@@ -91,9 +91,10 @@ ul {
 .sidebar img {
   width: 150px;
   height: 150px;
-  object-fit: cover;
-  border-radius: 8px; /* Cámbialo a 50% si quieres la cara redonda */
+  object-fit: contain;    /* ⬅️ Cambiado de 'cover' a 'contain' */
+  border-radius: 8px;
   display: block;
   margin: 0 auto 20px auto;
+  background-color: white;  /* Por si hay bordes vacíos */
+  padding: 4px;              /* Para que no se vea tan apretado */
 }
-
