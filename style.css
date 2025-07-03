@@ -91,10 +91,10 @@ ul {
 .sidebar img {
   width: 150px;
   height: 150px;
-  object-fit: contain;    /* ⬅️ Cambiado de 'cover' a 'contain' */
+  object-fit: contain;    
   border-radius: 8px;
   display: block;
   margin: 0 auto 20px auto;
-  background-color: white;  /* Por si hay bordes vacíos */
-  padding: 4px;              /* Para que no se vea tan apretado */
+  background-color: white; 
+  padding: 4px;            
 }
