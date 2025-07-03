@@ -87,3 +87,13 @@ ul {
   padding-left: 20px;
   line-height: 1.6;
 }
+
+.sidebar img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px; /* Cámbialo a 50% si quieres la cara redonda */
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
