@@ -1,7 +1,17 @@
-body {
-  font-family: 'Poppins', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.6;
@@ -15,20 +25,17 @@ header {
 }
 
 header h1 {
-  margin: 0;
+  margin-bottom: 0.5rem;
   font-size: 2rem;
-}
-
-nav {
-  margin-top: 0.5rem;
+  font-weight: 700;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 1rem;
-  font-weight: bold;
-  transition: color 0.3s;
+  margin: 0 0.75rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
@@ -44,16 +51,8 @@ nav a:hover {
 
 .content h2 {
   margin-top: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: #0055aa;
-}
-
-ul {
-  padding-left: 1.2rem;
-}
-
-ul li {
-  margin-bottom: 0.6rem;
 }
 
 a {
@@ -66,10 +65,25 @@ a:hover {
   color: #0077ff;
 }
 
-/* BLOQUES DESPLEGABLES (details) */
+ul {
+  padding-left: 1.4rem;
+}
+
+ul li {
+  margin-bottom: 0.7rem;
+}
+
+.profile-pic {
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 1.5rem auto;
+}
+
 details {
   margin-bottom: 1rem;
-  background-color: #fff;
+  background: #fff;
   border: 1px solid #ccc;
   border-radius: 6px;
   padding: 1rem;
@@ -82,10 +96,32 @@ summary {
 }
 
 details[open] {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* responsive */
+.button-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  background-color: #0055aa;
+  color: white;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.button-link:hover {
+  background-color: #0077ff;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  margin: 3rem 0 1rem;
+}
+
 @media (max-width: 768px) {
   header {
     padding: 1rem;
@@ -97,7 +133,7 @@ details[open] {
 
   nav a {
     display: block;
-    margin: 0.5rem 0;
+    margin: 0.4rem 0;
   }
 
   .container {
@@ -105,15 +141,10 @@ details[open] {
   }
 
   .content h2 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+  }
+
+  .profile-pic {
+    max-width: 120px;
   }
 }
-
-.profile-pic {
-  max-width: 150px;
-  height: auto;
-  border-radius: 10px;
-  display: block;
-  margin-bottom: 20px;
-}
-
