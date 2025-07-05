@@ -1,100 +1,110 @@
 body {
-  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #0f172a;
-  color: #f8fafc;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
 }
 
 header {
-  background-color: #1e293b;
-  padding: 20px;
+  background-color: #0055aa;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
 }
 
 header h1 {
   margin: 0;
-  font-size: 1.8em;
+  font-size: 2rem;
 }
 
 nav {
-  margin-top: 10px;
+  margin-top: 0.5rem;
 }
 
 nav a {
-  color: #38bdf8;
-  margin-right: 15px;
+  color: white;
   text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
 nav a:hover {
+  color: #ffdd57;
   text-decoration: underline;
 }
 
 .container {
-  display: flex;
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 0 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-.sidebar {
-  width: 250px;
-  margin-right: 40px;
-}
-
-.sidebar img {
-  max-width: 100%;
-  border-radius: 50%;
-}
-
-.sidebar .social a {
-  color: #38bdf8;
-  display: block;
-  margin-bottom: 8px;
-}
-
-.content {
-  flex: 1;
-}
-
-h2 {
-  border-bottom: 1px solid #334155;
-  padding-bottom: 4px;
-}
-
-a {
-  color: #38bdf8;
-}
-
-a:hover {
-  color: #7dd3fc;
-}
-
-.back-button {
-  background-color: #334155;
-  color: #f8fafc;
-  border: none;
-  padding: 6px 12px;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-.back-button:hover {
-  background-color: #475569;
+.content h2 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #0055aa;
 }
 
 ul {
-  padding-left: 20px;
-  line-height: 1.6;
+  padding-left: 1.2rem;
 }
 
-.sidebar img {
-  width: 150px;
-  height: 150px;
-  object-fit: contain;    
-  border-radius: 8px;
-  display: block;
-  margin: 0 auto 20px auto;
-  background-color: white; 
-  padding: 4px;            
+ul li {
+  margin-bottom: 0.6rem;
+}
+
+a {
+  color: #0055aa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0077ff;
+}
+
+/* BLOQUES DESPLEGABLES (details) */
+details {
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+summary {
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+details[open] {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .content h2 {
+    font-size: 1.3rem;
+  }
 }
