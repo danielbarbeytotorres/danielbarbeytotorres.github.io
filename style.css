@@ -108,3 +108,12 @@ details[open] {
     font-size: 1.3rem;
   }
 }
+
+.profile-pic {
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 20px;
+}
+
