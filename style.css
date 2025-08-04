@@ -160,3 +160,14 @@ footer {
     max-width: 120px;
   }
 }
+
+/* ─── Arregla el color de las “cajas” desplegables ── */
+summary,                    /* título de la caja            */
+summary::marker,            /* bala / flecha en Firefox      */
+summary::-webkit-details-marker {  /* bala / flecha en Chrome  */
+  color: #e0e0e0;           /* texto + flecha en gris claro  */
+}
+
+details ul {                /* lista interna (los enlaces)   */
+  color: #e0e0e0;           /* gris claro también            */
+}
