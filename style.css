@@ -64,13 +64,13 @@ nav a:hover {
 }
 
 a {
-  color: #9ab;
+  color: #b0b0b0;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #0077ff;
+  color: #888;
 }
 
 ul {
