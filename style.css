@@ -12,14 +12,14 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #121212;
+  color: #e0e0e0;
   line-height: 1.6;
 }
 
 header {
-  background-color: #0055aa;
-  color: white;
+  background-color: #000;
+  color: #e0e0e0;
   padding: 1rem 2rem;
   text-align: center;
 }
@@ -31,7 +31,7 @@ header h1 {
 }
 
 nav a {
-  color: white;
+  color: #e0e0e0;
   text-decoration: none;
   margin: 0 0.75rem;
   font-weight: 500;
@@ -39,7 +39,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffdd57;
+  color: #bbb;
   text-decoration: underline;
 }
 
@@ -52,7 +52,7 @@ nav a:hover {
 .content h2 {
   margin-top: 2rem;
   font-size: 1.75rem;
-  color: #0055aa;
+  color: #e0e0e0;
 }
 
 .cert-img {
@@ -64,7 +64,7 @@ nav a:hover {
 }
 
 a {
-  color: #0055aa;
+  color: #9ab;
   text-decoration: none;
 }
 
@@ -111,7 +111,7 @@ details[open] {
   display: inline-block;
   padding: 0.5rem 1rem;
   margin-top: 0.5rem;
-  background-color: #0055aa;
+  background-color: #e0e0e0;
   color: white;
   border-radius: 6px;
   font-weight: 500;
@@ -120,7 +120,7 @@ details[open] {
 }
 
 .button-link:hover {
-  background-color: #0077ff;
+  background-color: #555;
 }
 
 footer {
