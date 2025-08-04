@@ -55,6 +55,14 @@ nav a:hover {
   color: #0055aa;
 }
 
+.cert-img {
+  width: 100%;        /* ocupa todo el ancho del contenedor */
+  max-width: 700px;   /* no crece más allá de 700 px */
+  height: auto;       /* mantiene la proporción */
+  display: block;     /* elimina espacio extra debajo de la imagen */
+  margin: 0 auto;     /* la centra cuando es más pequeña que el contenedor */
+}
+
 a {
   color: #0055aa;
   text-decoration: none;
