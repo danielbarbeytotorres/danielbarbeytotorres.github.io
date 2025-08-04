@@ -12,8 +12,8 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f5f5f5;
-  color: #111;
+  background-color: #121212;  /* fondo gris-negro */
+  color: #e0e0e0;             /* texto claro */
   line-height: 1.6;
 }
 
@@ -91,12 +91,11 @@ ul li {
 
 details {
   margin-bottom: 1rem;
-  background: #fff;
-  border: 1px solid #ccc;
   background: #1e1e1e;
   border: 1px solid #444;
   border-radius: 6px;
   padding: 1rem;
+  color: #e0e0e0;   /* texto claro dentro de la caja */
 }
 
 summary {
