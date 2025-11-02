@@ -1,0 +1,13 @@
+title: "Daniel Barbeyto"
+url: "https://danielbarbeytotorres.github.io"
+baseurl: "" # no toques esto
+
+markdown: kramdown
+theme: minima
+
+collections:
+  vulns:
+    output: true
+    permalink: /metasploitable2/:name/
+
+permalink: /:categories/:title/
