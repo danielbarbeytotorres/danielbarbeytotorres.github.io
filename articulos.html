@@ -18,11 +18,11 @@ title: "Artículos - Daniel Barbeyto"
 
 <body>
   <header>
-    <h1>Artículos y Write-Ups</h1>
+    <h1>Artículos</h1>
     <nav>
       <a href="index.html">Inicio</a>
       <a href="articulos.html" class="active">Artículos</a>
-      <a href="tests.html">Tests</a>
+      <a href="tests.html">Testsa</a>
       <a href="contacto.html">Contacto</a>
       <a href="certificados.html">Certificados</a>
     </nav>
@@ -31,11 +31,9 @@ title: "Artículos - Daniel Barbeyto"
   <div class="container">
     <main class="content">
       <p>
-        Aquí encontrarás todos mis <strong>artículos técnicos</strong>, <strong>write-ups</strong> y <strong>remediaciones</strong>,
-        ordenados del más reciente al más antiguo.
+        Aquí encontrarás todos mis <strong>artículos técnicos</strong>, <strong>write-ups</strong> y <strong>remediaciones</strong>.
       </p>
 
-      <h2>📘 Todos los artículos</h2>
       <ul>
         {% assign sorted_posts = site.posts | sort: "date" | reverse %}
         {% for post in sorted_posts %}
@@ -50,9 +48,5 @@ title: "Artículos - Daniel Barbeyto"
       </ul>
     </main>
   </div>
-
-  <footer>
-    <p>© {{ site.time | date: "%Y" }} Daniel Barbeyto Torres</p>
-  </footer>
 </body>
 </html>
