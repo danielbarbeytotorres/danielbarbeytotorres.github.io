@@ -57,7 +57,7 @@ title: "Daniel Barbeyto Torres"
       <p>Abajo tienes todos los posts publicados. Haz clic para ver el artículo completo.</p>
 
       <ul>
-        {% assign metas = site.posts | where_exp:"item","item.categories contains 'metasploitable' or item.tags contains 'metasploitable'" %}
+        {% assign metas = site.posts | where_exp:"item","item.categories contains 'metasploitable'" %}
         {% for post in metas %}
           <li>
             <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
