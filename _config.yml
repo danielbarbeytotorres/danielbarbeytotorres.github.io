@@ -1,13 +1,10 @@
 title: "Daniel Barbeyto"
 url: "https://danielbarbeytotorres.github.io"
-baseurl: "" # no toques esto
-
+baseurl: ""
 markdown: kramdown
 theme: minima
 
+# Aquí se define dónde están tus artículos
 collections:
-  vulns:
+  posts:
     output: true
-    permalink: /metasploitable2/:name/
-
-permalink: /:categories/:title/

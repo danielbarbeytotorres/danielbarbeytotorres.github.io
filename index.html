@@ -1,8 +1,13 @@
+---
+layout: default
+title: "Daniel Barbeyto Torres"
+---
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8"> 
-  <title>Daniel Barbeyto Torres</title> 
+  <title>{{ page.title }}</title> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Página personal de Daniel Barbeyto Torres">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +19,7 @@
   <header>
     <h1>Daniel Barbeyto Torres</h1> 
     <nav>
-      <a href="index.html">Inicio</a> 
+      <a href="{{ '/' | relative_url }}">Inicio</a> 
       <a href="tests.html">Tests</a>
       <a href="contacto.html">Contacto</a>
       <a href="certificados.html">Certificados</a>
@@ -44,10 +49,31 @@
         <li><a href="https://www.daypo.com/autores.php?t=607009" target="_blank">Daypo</a></li>
         <li><a href="HTB.pdf" target="_blank" rel="noopener noreferrer">Ver mi formación en HTB Academy (actualizado 22/7/25)</a></li>
         <li><a href="https://tryhackme.com/p/danibarbeytotorr" target="_blank">TryHackMe</a></li>
-        <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=5117368" style='border:none;'></iframe>
       </ul>
+
+      <hr>
+
+      <h2>Artículos y remediaciones (Metasploitable y otros)</h2>
+      <p>Abajo tienes todos los posts publicados. Haz clic para ver el artículo completo.</p>
+
+      <ul>
+        {% assign metas = site.posts | where_exp:"item","item.categories contains 'metasploitable' or item.tags contains 'metasploitable'" %}
+        {% for post in metas %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            — <small>{{ post.date | date: "%Y-%m-%d" }}</small>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <h3>Todos los posts recientes</h3>
+      <ul>
+        {% for post in site.posts limit:10 %}
+          <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> — <small>{{ post.date | date: "%Y-%m-%d" }}</small></li>
+        {% endfor %}
+      </ul>
+
     </main>
   </div>
 </body>
 </html>
-
