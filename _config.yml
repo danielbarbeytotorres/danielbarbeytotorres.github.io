@@ -1,10 +1,5 @@
-title: ""
-url: "https://danielbarbeytotorres.github.io"
-baseurl: ""
+title: "Daniel Barbeyto Torres"
 markdown: kramdown
-theme: minima
-
-# Aquí se define dónde están tus artículos
-collections:
-  posts:
-    output: true
+theme: null
+plugins: []
+exclude: ["node_modules", "Gemfile", "Gemfile.lock"]
