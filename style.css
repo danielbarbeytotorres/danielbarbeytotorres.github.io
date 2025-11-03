@@ -160,3 +160,20 @@ footer {
 details ul {                /* lista interna (los enlaces)   */
   color: #e0e0e0;           /* gris claro también            */
 }
+
+/* --- Personalización del encabezado superior --- */
+.site-title {
+  color: white !important;   /* Cambia el color a blanco */
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.site-title:hover {
+  color: #9dc1ff;            /* Azulito claro al pasar el ratón (opcional) */
+}
+
+.site-header {
+  background-color: transparent !important; /* Quita el fondo oscuro de arriba */
+  border: none;
+  box-shadow: none;
+}
