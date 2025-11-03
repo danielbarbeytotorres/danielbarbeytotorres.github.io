@@ -19,7 +19,7 @@ body {
 
 /* ——— Encabezado ——— */
 header {
-  background-color: #1a1a1a;   /* un gris-negro un poco más claro que el fondo */
+  background-color: #1a1a1a;   /* un gris-negro más claro que el fondo */
   color: #e0e0e0;
   padding: 1rem 2rem;
   text-align: center;
@@ -40,21 +40,28 @@ nav a {
 }
 
 nav a:hover {
-  color: #bbb;
+  color: #9dc1ff;
   text-decoration: underline;
 }
 
-/* ——— Contenido principal ——— */
+/* ——— Contenedor general ——— */
 .container {
-  max-width: 1200px;        /* antes 800px: más ancho y legible */
+  max-width: 1300px;        /* aprovechamos más el ancho */
   margin: 0 auto;
-  padding: 40px 60px;       /* más espacio lateral y vertical */
+  padding: 50px 80px;       /* más aire en los lados */
+}
+
+.content {
+  max-width: 950px;         /* centramos el texto en columnas cómodas */
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.7;
 }
 
 .content h2 {
   margin-top: 2rem;
-  font-size: 1.75rem;
-  color: #a8a8a8;             /* gris oscuro “formal”       */
+  font-size: 1.8rem;
+  color: #a8a8a8;
 }
 
 /* ——— Imágenes de certificados ——— */
@@ -70,11 +77,12 @@ nav a:hover {
 a {
   color: #b0b0b0;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #888;
+  color: #9dc1ff;
 }
 
 /* ——— Listas ——— */
@@ -83,11 +91,12 @@ ul li       { margin-bottom: 0.7rem; }
 
 /* ——— Foto de perfil ——— */
 .profile-pic {
-  max-width: 150px;
+  max-width: 160px;
   height: auto;
   border-radius: 10px;
   display: block;
-  margin: 0 auto 1.5rem;
+  margin: 1rem auto 1.5rem;
+  box-shadow: 0 0 15px rgba(255,255,255,0.05);
 }
 
 /* ——— Cajas desplegables (<details>) ——— */
@@ -97,28 +106,25 @@ details {
   border: 1px solid #444;
   border-radius: 6px;
   padding: 1rem;
-  color: #e0e0e0;               /* color claro para TODO su interior */
+  color: #e0e0e0;
 }
 
 summary {
   font-size: 1.1rem;
   font-weight: bold;
   cursor: pointer;
-  color: #e0e0e0;               /* título claro                     */
+  color: #e0e0e0;
 }
 
-/* flechita ► / ▼ en summary */
 summary::marker,
 summary::-webkit-details-marker {
   color: #e0e0e0;
 }
 
-/* color de la lista y enlaces dentro de la caja */
 details ul         { color: #e0e0e0; }
 details ul a       { color: #b0b0b0; }
-details ul a:hover { color: #888; }
+details ul a:hover { color: #9dc1ff; }
 
-/* sombreado cuando está abierta */
 details[open] {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
 }
@@ -136,7 +142,9 @@ details[open] {
   text-decoration: none;
 }
 
-.button-link:hover { background-color: #222; }
+.button-link:hover {
+  background-color: #222;
+}
 
 /* ——— Pie de página ——— */
 footer {
@@ -146,34 +154,52 @@ footer {
   margin: 3rem 0 1rem;
 }
 
-/* ——— Responsive ——— */
-@media (max-width: 768px) {
-  header        { padding: 1rem; }
-  header h1     { font-size: 1.5rem; }
-  nav a         { display: block; margin: 0.4rem 0; }
-  .container    { padding: 1rem; }
-  .content h2   { font-size: 1.4rem; }
-  .profile-pic  { max-width: 120px; }
-}
-
-
-details ul {                /* lista interna (los enlaces)   */
-  color: #e0e0e0;           /* gris claro también            */
-}
-
-/* --- Personalización del encabezado superior --- */
+/* ——— Encabezado superior (site title) ——— */
 .site-title {
-  color: white !important;   /* Cambia el color a blanco */
+  color: white !important;   /* blanco limpio */
   font-weight: 600;
   text-decoration: none;
 }
 
 .site-title:hover {
-  color: #9dc1ff;            /* Azulito claro al pasar el ratón (opcional) */
+  color: #9dc1ff;
 }
 
 .site-header {
-  background-color: transparent !important; /* Quita el fondo oscuro de arriba */
+  background-color: transparent !important;
   border: none;
   box-shadow: none;
+}
+
+/* ——— Responsive ——— */
+@media (max-width: 900px) {
+  header {
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.4rem 0;
+  }
+
+  .container {
+    padding: 1.5rem;
+    max-width: 95%;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .content h2 {
+    font-size: 1.4rem;
+  }
+
+  .profile-pic {
+    max-width: 120px;
+  }
 }
