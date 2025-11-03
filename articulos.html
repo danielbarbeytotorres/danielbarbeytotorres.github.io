@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Artículos - Daniel Barbeyto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Artículos y remediaciones de seguridad escritos por Daniel Barbeyto Torres.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Artículos y Remediaciones</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="articulos.html">Artículos</a>
+      <a href="tests.html">Tests</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="certificados.html">Certificados</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main class="content">
+
+      <p style="margin-bottom: 1.5rem;">
+        Aquí encontrarás todos mis <strong>artículos técnicos, write-ups y remediaciones</strong>,
+        especialmente los relacionados con <strong>Metasploitable 2</strong> y otros entornos de laboratorio.
+      </p>
+
+      <h2>Artículos sobre Metasploitable</h2>
+      <ul>
+        {% assign metas = site.posts | where_exp:"item","item.categories contains 'metasploitable'" %}
+        {% for post in metas %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            — <small>{{ post.date | date: "%Y-%m-%d" }}</small>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <hr style="margin: 3rem 0;">
+
+      <h2>Últimos artículos</h2>
+      <ul>
+        {% for post in site.posts limit:10 %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            — <small>{{ post.date | date: "%Y-%m-%d" }}</small>
+          </li>
+        {% endfor %}
+      </ul>
+
+    </main>
+  </div>
+</body>
+</html>
