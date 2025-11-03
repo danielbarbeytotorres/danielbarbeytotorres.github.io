@@ -46,9 +46,9 @@ nav a:hover {
 
 /* ——— Contenido principal ——— */
 .container {
-  max-width: 900px;
+  max-width: 1200px;        /* antes 800px: más ancho y legible */
   margin: 0 auto;
-  padding: 2rem;
+  padding: 40px 60px;       /* más espacio lateral y vertical */
 }
 
 .content h2 {
