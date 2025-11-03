@@ -7,6 +7,7 @@ title: "Artículos - Daniel Barbeyto"
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <h1>Artículos</h1>
   <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Artículos técnicos, write-ups y remediaciones automáticas de vulnerabilidades por Daniel Barbeyto Torres.">
@@ -17,23 +18,13 @@ title: "Artículos - Daniel Barbeyto"
 </head>
 
 <body>
-  <header>
-    <h1>Artículos</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="articulos.html" class="active">Artículos</a>
-      <a href="tests.html">Testsa</a>
-      <a href="contacto.html">Contacto</a>
-      <a href="certificados.html">Certificados</a>
-    </nav>
-  </header>
 
   <div class="container">
     <main class="content">
       <p>
         Aquí encontrarás todos mis <strong>artículos técnicos</strong>, <strong>write-ups</strong> y <strong>remediaciones</strong>.
       </p>
-
+      <h2>Artículos</h2>
       <ul>
         {% assign sorted_posts = site.posts | sort: "date" | reverse %}
         {% for post in sorted_posts %}
