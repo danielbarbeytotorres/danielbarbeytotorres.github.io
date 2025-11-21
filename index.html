@@ -47,28 +47,6 @@
         <li><a href="https://tryhackme.com/p/danibarbeytotorr" target="_blank">TryHackMe</a></li>
       </ul>
 
-      <hr>
-
-      <h2>Artículos y remediaciones (Metasploitable y otros)</h2>
-      <p>Abajo tienes todos los posts publicados. Haz clic para ver el artículo completo.</p>
-
-      <ul>
-        {% assign metas = site.posts | where_exp:"item","item.categories contains 'metasploitable'" %}
-        {% for post in metas %}
-          <li>
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-            — <small>{{ post.date | date: "%Y-%m-%d" }}</small>
-          </li>
-        {% endfor %}
-      </ul>
-
-      <h3>Todos los posts recientes</h3>
-      <ul>
-        {% for post in site.posts limit:10 %}
-          <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> — <small>{{ post.date | date: "%Y-%m-%d" }}</small></li>
-        {% endfor %}
-      </ul>
-
     </main>
   </div>
 </body>
