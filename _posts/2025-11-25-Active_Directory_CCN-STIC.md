@@ -124,9 +124,7 @@ Deshabilite la directiva "Apagar el sistema de inmediato si no se pueden registr
 
 **[Puedes descargar la Guía CCN-STIC 599AB23 usada aquí (PDF)](/archivos_posts/CCN-STIC 599AB23.pdf)**
 
-Estas son las políticas que implementé del **CCN-STIC-599AB23**:
-
-Las guías para clientes se aplicaron desde los anexos A2, A3 y A4:<br>
+Estas son las políticas que implementé del **CCN-STIC-599AB23**. Las guías para clientes se aplicaron desde los anexos A2, A3 y A4.<br>
 
 ## Anexo A2.2 - Mantenimiento y actualizaciones de seguridad
 
