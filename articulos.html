@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Artículos"
+title: "📋 Artículos 📋"
 ---
 
 <!DOCTYPE html>
@@ -30,7 +30,7 @@ title: "Artículos"
           <li>
             <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
             — <small>{{ post.date | date: "%Y-%m-%d" }}</small>
-            {% if post.categories %}
+            {% if post.categories and post.categories.size > 0 %}
               <span style="color:#888;">[{{ post.categories | join: ', ' }}]</span>
             {% endif %}
           </li>
