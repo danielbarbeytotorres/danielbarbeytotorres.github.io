@@ -8,11 +8,11 @@ date: 2025-11-18
 
 ## Introducción
 
-Durante mi paso por la UNIR, he realizado hace poco una de las experiencias más completas (y sinceramente, más sufridas) que he tenido durante el Master de Ciberseguridad: Implementar un dominio Windows Server desde cero y endurecerlo siguiendo las guías del CCN-CERT (*Centro Criptológico Nacional**).
+Durante mi paso por la UNIR, he realizado hace poco una de las experiencias más completas (y sinceramente, más sufridas) que he tenido durante el Master de Ciberseguridad: Implementar un dominio Windows Server desde cero y endurecerlo siguiendo las guías del CCN-CERT (*Centro Criptológico Nacional*).
 
 El objetivo de la actividad que realice era **implantar políticas del ENS (*Esquema Nacional de Seguridad*)** sobre:
 - Los **controladores de dominio y los servidores** con la guía **CCN-STIC-570A23**.
-- LOs **equipos cliente Windows** con la guía **CCN-STIC-599AB23**.
+- Los **equipos cliente Windows** con la guía **CCN-STIC-599AB23**.
 
 ## Enunciado de la actividad
 
