@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AD + CCN-STIC - Implementando seguridad corporativa con Active Directory y las guías CCN-STIC"
-date: 2025-11-18
+date: 2025-11-25
 ---
 
 ![Foto de Active Directory](/img/AD_CCN_1.png)

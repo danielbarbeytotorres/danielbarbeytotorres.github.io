@@ -75,8 +75,8 @@ Este taller supuso entender **redes reales**. De este, me llevo conocimiento:
 - Conocimiento real sobre cómo afecta la MTU a las VPN.
 - Control sobre *iptables*, *policy routing* y XFRM.
 
-## 8. Enlace para la descarga de mi memoria del taller
+## 8. Enlace para la descarga de mi memoria del taller !!
 
-**[Aquí puedes descargar el enunciado para prácticar con esta herramienta (PDF)](/archivos_posts/Taller_strongSwan_enu.pdf)**
+📄 **[Aquí puedes descargar el enunciado para prácticar con esta herramienta (PDF)](/archivos_posts/Taller_strongSwan_enu.pdf)**
 
-**[Aquí puedes descargar la memoria que hice para prácticar con esta herramienta (PDF)](/archivos_posts/Taller_strongSwan_mem.pdf)**
+📄 **[Aquí puedes descargar la memoria que hice para prácticar con esta herramienta (PDF)](/archivos_posts/Taller_strongSwan_mem.pdf)**
