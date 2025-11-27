@@ -8,7 +8,7 @@ date: 2025-11-27
 
 # OpenVAS-Report-Splitter: Mi nueva herramienta para el post-procesado de un informe en OpenVAS
 
-[Código de OpenVAS-Report-Splitter]
+[Código de OpenVAS-Report-Splitter](https://github.com/danielbarbeytotorres/OpenVAS-Report-Splitter.git)
 
 Si te dedicas a la ciberseguridad o al pentesting, sabrás que OpenVAS es un servicio que posibilita escanear un host para encontrar sus vlnerabilidades. El problema no es el escano, si no que al terminar, te suelta un informe muy largo y difícil de procesar para extraer solo lo que te interesa.
 
