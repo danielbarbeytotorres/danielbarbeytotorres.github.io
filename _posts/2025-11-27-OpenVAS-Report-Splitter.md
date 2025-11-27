@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AD + CCN-STIC - Implementando seguridad corporativa con Active Directory y las guías CCN-STIC"
+title: "OpenVAS-Report-Splitter: Mi nueva herramienta para el post-procesado de un informe en OpenVAS"
 date: 2025-11-27
 ---
 
@@ -25,4 +25,4 @@ Es muy fácil:
 - Entra en él: cd OpenVAS-Report-Splitter
 - Lee el **README.md** para saber como configurar la herramienta con tus parámetros.
 
-¡Espero que a alguien le sea útil!
+¡Espero que a alguien le sea útil! Todo feedbach es bienvenido.
