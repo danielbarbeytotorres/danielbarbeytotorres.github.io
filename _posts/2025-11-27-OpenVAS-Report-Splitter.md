@@ -17,7 +17,7 @@ Sobre este concepto me surgió una idea: Crear una herramienta que automatice y 
 ## ¿Qué hace la herramienta?
 En esencia, obtiene mediante la API de OpenVAS (gvm-cli) el informe en formato XML, lo parsea a JSON y divide el resultado en múltiples archivos .json donde cada uno representa cada una de las vulnerabilidades que se han encontrado.
 
-[Output de la herramienta](/img/openvas_2.png)
+![Output de la herramienta](/img/openvas_2.png)
 
 ## ¿Cómo descargo la herramienta?
 Es muy fácil:
