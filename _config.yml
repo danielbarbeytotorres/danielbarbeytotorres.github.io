@@ -1,5 +1,0 @@
-title: "Daniel Barbeyto Torres"
-markdown: kramdown
-theme: null
-plugins: []
-exclude: ["node_modules", "Gemfile", "Gemfile.lock"]

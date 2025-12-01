@@ -42,7 +42,7 @@ Tras un reinicio y un par de clicks, ya podía autenticarme en el dominio sin pr
 # Aplicación de políticas de seguridad del CCN-STIC en el servidor
 En este punto comenzaba realmente el objetivo de la actividad, que es trasladar a este dominio real y funcional las guías nacionales de seguridad. Para aplicar las directivas, simule que estaba trabajando sobre una organización real, a la que llame **Atlántico S.L.**
 
-**[Puedes descargar la Guía CCN-STIC 570A23 usada aquí (PDF)](/archivos_posts/CCN-STIC 570A23.pdf)**
+**[Puedes descargar la Guía CCN-STIC 570A23 usada aquí (PDF)](</archivos_posts/CCN-STIC 570A23.pdf>)**
 
 Estas son las políticas que implementé del **CCN-STIC-570A23**:<br>
 
@@ -122,7 +122,7 @@ Deshabilite la directiva "Apagar el sistema de inmediato si no se pueden registr
 
 # Aplicación de políticas de seguridad del CCN-STIC en el cliente
 
-**[Puedes descargar la Guía CCN-STIC 599AB23 usada aquí (PDF)](/archivos_posts/CCN-STIC 599AB23.pdf)**
+**[Puedes descargar la Guía CCN-STIC 599AB23 usada aquí (PDF)](</archivos_posts/CCN-STIC 599AB23.pdf<)**
 
 Estas son las políticas que implementé del **CCN-STIC-599AB23**. Las guías para clientes se aplicaron desde los anexos A2, A3 y A4.<br>
 
@@ -158,7 +158,7 @@ Igual que en el servidor: Solo Administradores y Auditores pueden gestionar el r
 
 El cliente muestra el mensaje legal corporativo al iniciar sesión.
 
-Evidencia de funcionamiento:
+**Evidencia de funcionamiento:**
 
 ![Evidencia del Anexo A4.1](/img/AD_CCN_19.png)<br>
 
@@ -166,9 +166,8 @@ Evidencia de funcionamiento:
 Configuree almacenamiento hasta 32 MB por log y retención de 1 año (donde aplica).<br>
 
 ## Conclusión
-Esta práctica me obligó a trabajar con un enfoque muy cercano al de un administrador de sistemas de una empresa real. No solo tuve que instalar y hacer funcionar un dominio, sino entender, adaptar y justificar políticas del ENS como si estuviese endureciendo un entorno corporativo. Además, pude comprobar:
-- Cómo interactúan servidor y cliente a través de GPOs.
-- Qué configuraciones del CCN-STIC tienen mayor impacto.
-- La importancia de la segregación de funciones.
-- Los problemas reales, como la falta de espacio para copias de seguridad, y cómo documentarlos adecuadamente sin romper la práctica.
-Finalmente, logré aplicar con éxito todas las directivas requeridas en servidores y clientes, obteniendo un entorno seguro y compatible con las buenas prácticas del CCN-CERT.
+Esta práctica me obligó a trabajar con un enfoque muy cercano al de un **administrador de sistemas** de una empresa real. No solo tuve que instalar y hacer funcionar un dominio, sino entender, adaptar y justificar políticas del ENS como si estuviese endureciendo un entorno corporativo. Además, pude comprobar:
+- Cómo interactúan **servidor** y **cliente** a través de GPOs.
+- Qué configuraciones del **CCN-STIC** tienen mayor impacto.
+- La importancia de la **segregación de funciones**.
+Finalmente, logré aplicar con **éxito** todas las directivas requeridas en servidores y clientes, obteniendo un **entorno seguro y compatible con las buenas prácticas del CCN-CERT**.
