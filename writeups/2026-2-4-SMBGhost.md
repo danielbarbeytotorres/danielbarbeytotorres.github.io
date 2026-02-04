@@ -23,9 +23,9 @@ El resultado es un desbordamiento de búfer (Buffer Overflow) que permite sobres
 
 El script desarrollado demuestra cómo explotar este fallo para lograr ejecución de código. El proceso se divide en lectura/escritura arbitraria y elusión de mitigaciones.
 
-**[Pulsa aquí para descargar el código del exploit (Python)](</archivos_posts/Exploit_SMBGhost>)**
+**[Pulsa aquí para descargar el código del exploit (Python)](</archivos_posts/Exploit_SMBGhost.py>)**
 
-En la siguiente figura podemos ver la configuración del entorno de prueba:re
+En la siguiente figura podemos ver la configuración del entorno de prueba:
 
 ![SMBGhost](/img/SMBGhost_2.png)
 
@@ -74,7 +74,7 @@ En la siguiente Figura podemos ver el *shell reverse* que se abre en la terminal
 ## 4. Conclusión
 SMBGhost demuestra cómo un fallo aritmético simple en una nueva funcionalidad (compresión) puede comprometer totalmente la seguridad del kernel. La mitigación principal consiste en desactivar la compresión SMBv3 o aplicar los parches de seguridad de Microsoft de marzo de 2020.
 
-**[Para ver el informe técnico completo, puedes descargarlo pinchando aquí (PDF)](</archivos_posts/Informe_SMBGhost>)**
+**[Para ver el informe técnico completo, puedes descargarlo pinchando aquí (PDF)](</archivos_posts/Informe_SMBGhost.pdf>)**
 
 ---
 **Escrito por Daniel Barbeyto Torres, Manuel Noya Vázquez y Iker Jesus Pérez García**, *apoyado de herramientas de modelos de lenguaje para la redacción.*
