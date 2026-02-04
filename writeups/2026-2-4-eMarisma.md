@@ -7,7 +7,7 @@ date: 2026-2-4
 ![Vista general del proyecto en eMarisma](/img/eMarisma_dashboard.png)
 
 
-**[Enlace de mi informe técnico de gestión de riesgos realziado en eMarisma (PDF)](</archivos_posts/AR_eMarisma>)**
+**[Enlace de mi informe técnico de gestión de riesgos realziado en eMarisma (PDF)](/archivos_posts/AR_eMarisma)**
 
 ## 1. Introducción
 
